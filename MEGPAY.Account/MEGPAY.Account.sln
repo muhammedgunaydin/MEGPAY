@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0054BFD6-DC5C-4883-AD5B-62B3728FD9BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6DDE6807-BD9F-40CE-A63A-F02AE3D0B705}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.API", "Account.API\Account.API.csproj", "{14ED251B-42EC-454E-A44F-850D6991DCA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Application", "Account.Application\Account.Application.csproj", "{15B32BED-6AB1-4238-AC02-882DBC204C97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Domain", "Account.Domain\Account.Domain.csproj", "{4DAD27AB-F483-41C6-B2F4-B384F2FFBCD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Infrastructure", "Account.Infrastructure\Account.Infrastructure.csproj", "{68F95870-87D5-44FE-8049-23DBD9A022A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Shared", "Account.Shared\Account.Shared.csproj", "{CA343188-51A8-4516-B314-40E1A8D974EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transfer.Shared", "..\MEGPAY.Transfer\Transfer.Shared\Transfer.Shared.csproj", "{271E4AFF-2C1C-4C8F-B80F-5C906C4343F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{14ED251B-42EC-454E-A44F-850D6991DCA8} = {0054BFD6-DC5C-4883-AD5B-62B3728FD9BA}
+		{15B32BED-6AB1-4238-AC02-882DBC204C97} = {0054BFD6-DC5C-4883-AD5B-62B3728FD9BA}
+		{4DAD27AB-F483-41C6-B2F4-B384F2FFBCD6} = {0054BFD6-DC5C-4883-AD5B-62B3728FD9BA}
+		{68F95870-87D5-44FE-8049-23DBD9A022A5} = {0054BFD6-DC5C-4883-AD5B-62B3728FD9BA}
+		{CA343188-51A8-4516-B314-40E1A8D974EE} = {0054BFD6-DC5C-4883-AD5B-62B3728FD9BA}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14ED251B-42EC-454E-A44F-850D6991DCA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14ED251B-42EC-454E-A44F-850D6991DCA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14ED251B-42EC-454E-A44F-850D6991DCA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14ED251B-42EC-454E-A44F-850D6991DCA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B32BED-6AB1-4238-AC02-882DBC204C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B32BED-6AB1-4238-AC02-882DBC204C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B32BED-6AB1-4238-AC02-882DBC204C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B32BED-6AB1-4238-AC02-882DBC204C97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DAD27AB-F483-41C6-B2F4-B384F2FFBCD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DAD27AB-F483-41C6-B2F4-B384F2FFBCD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DAD27AB-F483-41C6-B2F4-B384F2FFBCD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DAD27AB-F483-41C6-B2F4-B384F2FFBCD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68F95870-87D5-44FE-8049-23DBD9A022A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F95870-87D5-44FE-8049-23DBD9A022A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F95870-87D5-44FE-8049-23DBD9A022A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F95870-87D5-44FE-8049-23DBD9A022A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA343188-51A8-4516-B314-40E1A8D974EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA343188-51A8-4516-B314-40E1A8D974EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA343188-51A8-4516-B314-40E1A8D974EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA343188-51A8-4516-B314-40E1A8D974EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{271E4AFF-2C1C-4C8F-B80F-5C906C4343F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{271E4AFF-2C1C-4C8F-B80F-5C906C4343F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{271E4AFF-2C1C-4C8F-B80F-5C906C4343F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{271E4AFF-2C1C-4C8F-B80F-5C906C4343F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
