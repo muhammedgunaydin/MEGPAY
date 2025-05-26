@@ -1,0 +1,61 @@
+## .NET build artifacts
+bin/
+obj/
+[Ll]og/
+*.log
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio settings
+.vs/
+.vscode/
+
+## Rider settings
+.idea/
+
+## ASP.NET Core environment files
+appsettings.*.json
+secrets.json
+*.env
+
+## Build results
+*.dll
+*.exe
+*.app
+*.pdb
+
+## Publish results
+publish/
+*.db
+*.db-shm
+*.db-wal
+
+## Temporary files
+*.tmp
+*.bak
+*.swp
+
+## OS files
+.DS_Store
+Thumbs.db
+
+## Test results
+TestResults/
+
+## NuGet packages
+*.nupkg
+*.snupkg
+*.nuspec
+*.cache
+*.nupkg.metadata
+.nuget/
+
+## Entity Framework
+Migrations/
+
+## Others
+coverage/
