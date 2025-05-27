@@ -7,6 +7,7 @@ using Transfer.Application.Transfers.Command.Transfer;
 using Transfer.Application.Transfers.Command.UpdateTransfer;
 using Transfer.Application.Transfers.Queries.GetAllTransfers;
 using Transfer.Application.Transfers.Queries.GetTransferById;
+using Transfer.Application.Transfers.Queries.GetTransferStatus;
 
 namespace Transfer.API.Controller
 {
@@ -19,6 +20,18 @@ namespace Transfer.API.Controller
         public TransfersController(IMediator mediator)
         {
             _mediator = mediator;
+        }
+        
+        [HttpGet("{id}/status")]
+        public async Task<IActionResult> GetTransferStatus(Guid id)
+        {
+            var query = new GetTransferStatusQuery(id);
+            var result = await _mediator.Send(query);
+
+            if (result == "NotFound")
+                return NotFound();
+
+            return Ok(result);
         }
         
         [HttpGet]

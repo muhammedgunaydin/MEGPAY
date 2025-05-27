@@ -6,9 +6,9 @@ public class Transfer : Entity<Guid>
 {
     public Guid FromAccountId { get; set; }
     public Guid ToAccountId { get; set; }
-    public double Amount { get; set; }
+    public decimal Amount { get; set; }
     
-    public Transfer(Guid id, Guid fromAccountId, Guid toAccountId, double amount)
+    public Transfer(Guid id, Guid fromAccountId, Guid toAccountId, decimal amount)
     {
         Id = id;
         FromAccountId = fromAccountId;
@@ -16,7 +16,7 @@ public class Transfer : Entity<Guid>
         Amount = amount;
     }
     
-    public void UpdateAmount(double amount)
+    public void UpdateAmount(decimal amount)
     {
         Amount = amount;
     }

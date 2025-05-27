@@ -7,5 +7,6 @@ public class CreateTransferCommand : IRequest<Response<bool>>
 {
     public Guid FromAccountId { get; set; }
     public Guid ToAccountId { get; set; }
-    public double Amount { get; set; }
+    public decimal Amount { get; set; }
+    public string ClientRequestId { get; set; }
 }
