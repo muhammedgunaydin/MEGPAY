@@ -7,5 +7,5 @@ public class CreateAccountCommand : IRequest<Response<bool>>
 {
     public string Name { get; set; }
     public string Surname { get; set; }
-    public double Balance { get; set; }
+    public decimal Balance { get; set; }
 }

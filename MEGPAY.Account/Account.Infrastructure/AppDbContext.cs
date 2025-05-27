@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Account.Domain.AccountAggregate;
+using Account.Infrastructure.Data.Entities;
 
 namespace Account.Infrastructure
 {
@@ -10,9 +11,11 @@ namespace Account.Infrastructure
         }
 
         public DbSet<Domain.AccountAggregate.Account> Accounts { get; set; }
-
+        public DbSet<AccountEventEntity> AccountEvents { get; set; }
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfiguration(new AccountEventConfiguration());
             modelBuilder.Entity<Domain.AccountAggregate.Account>(builder =>
             {
                 builder.ToTable("Accounts");

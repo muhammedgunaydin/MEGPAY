@@ -8,5 +8,5 @@ public class UpdateAccountCommand : IRequest<Response<bool>>
 {
     [JsonIgnore]
     public Guid Id { get; set; }
-    public double Balance { get; set; } 
+    public decimal Balance { get; set; } 
 }
